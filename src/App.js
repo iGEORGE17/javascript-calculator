@@ -1,24 +1,19 @@
-import logo from './logo.svg';
+import React from 'react'
+import { Container } from 'react-bootstrap';
 import './App.css';
+import Calculator from './components/Calculator';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section>
+      <Calculator />
+      <Container className="author">
+          <p>Designed and Coded By <br />
+          <a href="https://github.com/iGEORGE17" target="_blank" rel="noreferrer">
+            George Igboanugo
+          </a></p>
+        </Container>
+    </section>
   );
 }
 
